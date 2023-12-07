@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Endpoints
+metadata:
+  creationTimestamp: "2023-12-05T11:25:11Z"
+  labels:
+    endpointslice.kubernetes.io/skip-mirror: "true"
+  name: kubernetes
+  namespace: default
+  resourceVersion: "196"
+  uid: 0310eb8a-0fc0-45e9-b5a6-3c9d3a25888f
+subsets:
+- addresses:
+  - ip: 192.168.65.3
+  ports:
+  - name: https
+    port: 6443
+    protocol: TCP
