@@ -15,7 +15,7 @@ export class AppComponent {
   response:any[] = [];
   constructor(private http: HttpClient) 
   { 
-    this.http.get('http://localhost:8080/WeatherForecast').subscribe((response: any) => {
+    this.http.get('http://localhost:8080/WeatherForecast/GetDb').subscribe((response: any) => {
       console.log(response);
 	  this.response = response;		
 	});
